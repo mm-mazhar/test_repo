@@ -1,0 +1,10 @@
+# database_config.yml
+
+# Database connection configuration
+database:
+  host: localhost
+  port: 5432
+  dbname: FastAPI-SocialMediaAPI
+  user: postgres
+  password: maz
+  connect_timeout: 10

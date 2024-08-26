@@ -1,0 +1,51 @@
+{%load static %}
+<!DOCTYPE HTML>
+<!--
+	Portfolio: M. Mazhar
+-->
+<html>
+	<head>
+		<title>Portfolio | Mazhar</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
+		<link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+		<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Permanent+Marker" /> -->
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- ======= Header ======= -->
+								{% include 'partials/header.html' %}
+							<!-- ======= End of Header ======= -->
+
+							<!-- content_webscrapingandothers for django templates -->
+							<!-- <div> -->
+								{% block content_webscrapingandothers %}{% endblock content_webscrapingandothers %}
+							<!-- </div> -->
+							<!-- End of content_webscrapingandothers for django templates -->
+							
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					{% include 'partials/sidebar.html' %}
+			</div>
+
+		<!-- Scripts -->
+			<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+			<script src="{% static 'assets/js/browser.min.js' %}"></script>
+			<script src="{% static 'assets/js/breakpoints.min.js' %}"></script>
+			<script src="{% static 'assets/js/util.js' %}"></script>
+			<script src="{% static 'assets/js/main.js' %}"></script>
+			<script src="{% static 'assets/js/switchtheme.js' %}"></script>
+			<script src="{% static 'assets/js/aboutme.js' %}"></script>
+	</body>
+</html>
